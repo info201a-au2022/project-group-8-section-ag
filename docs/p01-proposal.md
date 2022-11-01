@@ -1,4 +1,4 @@
-# Title of your Project: Project Proposal 
+# A Data-Oriented Unpacking of Global Hunger and Undernourishment
 
 **TODO**: Edit this file. Your project proposal goes here.
 
@@ -9,8 +9,6 @@ For what to do, see the [`../instructions/`](../instructions/) directory, specif
 
 ## Code Name
 country_hunger
-## Project Title
-A Data-Oriented Unpacking of Global Hunger and Undernourishment
 ## Authors
 Samaya Badrieh, Natalie Stillwell, Desiree Vera
 ## Affilitation
