@@ -60,12 +60,27 @@ One in four people globally are moderately or severely food insecure, which mean
 
 ## The Dataset
 
+Our data has several subsections evaluating, undernurishment in the world by location, age group, food insecurity, etc. 
+
+| Chart Title      | Purpose       | # of Observations | # of Variables | Citations |
+|------------------|---------------|-------------------|----------------|-----------|
+|Undernourishment  | The purpose of these charts is to share the prevalence of undernourishment across the planet. It also highlights the effect of food insecurity on the population and how that directly correlates with undernourishment. | 188 | Country Date % Change in prevalence of undernouri-shment(3)| Share of the population that is undernourished| 
+|Childhood Malnutrition | The purpose of these graphs is to show children facing undernourishmnet are showing its effects in two specific ways. Stunting is observed in severe malnutrition cases where the height of children is two standard deviations below the mean height of children their age. The second factor is wasting. Here, the children are dangerously skinny for their height. It shows the severity of hunger on our newest generation. | 165 |Country Date % Change in prevalence of stunting/wasting/ underweight (3)| Malnutrition: Share of children who are stunted, 2020 Malnutrition: Share of children who are wasted, 2020 Malnutrition: Share of children who are underweight, 2020 |
+| The Global Hunger Index | The Global Hunger Index takes into account four of the pieces mentioned above: undernourishment, child wasting, child stunting, and child mortality. It allows us to understand how all three play a role on each individual country overtime. | 157 | Country Year % change in global hunger based on the 4 parts explained in the purpose (3) | Global Hunger Index, 2021| 
+| Long-term decline in undernourishment | This graph highlights the deep lasting effects of undernourishment on the population. It analyzes how developing countries have been noticing a decline in undernourishment over time. | 1 (developing countries all clubbed as 1) | Year % change in prevalence of undernourishment in developing countries (2) | Prevalence of undernourishment in developing countries, 1970 to 2015 | 
+| Food Insecurity | These graphs analyze food insecurity specifically. It looks at regions and the prevalence of this insecurity. It also looks at the correlation of different levels of  food insecurity and poverty as well. | 164 |Countries Years % change in prevalence of food insecurity in the total population (3) | Share of population with severe food insecurity, 2019 Number of people who are severely food insecure, 2019 |
+
+We got our data from the website, ourworldindata.org, which uses data from WHO, the food security indicator, and other reliable data collection sites. This data set allows us to look at answer our research questions by giving us several difference aspects of what contributes to world hunger and how it has changed over time. It also allows us to view our data in a map format so that we can see where hunger stems from and if its near countries located next to eachother. It also lets us analyze how specific events over time which contributes this data. 
+
 ## Expected Implications
 If we were to answer our research question, we would know the countries across the world that struggle the most with food instability and malnutrition. The implications of this are that humanitarian groups and governments would know best where to direct efforts and funding into reducing starvation. While the ultimate goal is to end hunger in all countries, addressing areas where hunger is especially severe or prolonged may be a good place to start. Presenting hunger data is additionally a good way to encourage people to donate or volunteer to help fight hunger, either in their own country or in others. And since our data is overtime, we will be able to see countries where starvation has been an issue for a long time compared to countries where widespread hunger has become more recent. Analysts may be able to compare this data to world events to see what changes or environments are likely to cause widespread hunger in a country.
 ## Limitations
 The limitations of this project that we must address are that we don’t have many metrics on contributing/risk factors for each element of the GHI score, so we cannot test if there are any associations between certain factors and increased hunger over time. We will be able to identify where hunger is worsening, but not why. For instance, the politics of a country and potential civil unrest may contribute to the most recent, and even sudden, declines in food availability for a country or group of countries and this would not be demonstrated in the dataset as is. Additionally, how countries get their food, either by mostly imports or mostly domestically, can impact consistent food accessibility, especially in pandemic situations and times of unrest and we would not necessarily be able to identify this situation for every country in this dataset.
 
 ## Appendix A: Questions
+For the final report, will we be required to have an appendix A?
+
+How many columns and features are necessary for our data set?
 
 ## References
 1. Who Does Hunger Affect? (2022, October 4). actionagainsthunger.org. https://www.actionagainsthunger.org/the-hunger-crisis/world-hunger-facts/who-does-hunger-affect/
