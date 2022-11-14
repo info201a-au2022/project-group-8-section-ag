@@ -27,5 +27,5 @@ avg_stunting_percountry <- left_join(
 
 colnames(avg_stunting_percountry)[colnames(avg_stunting_percountry) == "Entity"] ="Country"
 
-ggplot(data = avg_stunting_percountry) +
+avg_child_stunting_per_country <- ggplot(data = avg_stunting_percountry) +
   geom_col(mapping = aes(x = Country, y = avg_prevalence))
