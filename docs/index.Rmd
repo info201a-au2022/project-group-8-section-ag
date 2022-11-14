@@ -25,6 +25,7 @@ source("../source/data_access.R")
 data_access_test()
 ```
 
+
 ### Example 2: Initialize a variable and then use it
 ```{r}
 # Example 1: This function was "sourced" above
@@ -32,6 +33,16 @@ msg <- data_access_test(" Morgan!")
 ```
 
 > `r msg` Hope you have a good day!! 
+
+```{r, include=FALSE}
+# I could only get the chart to embed after I uploaded the source code 
+source("../source/Graph_1.R")
+```
+```{r Graph_1, echo=FALSE}
+#here is the 1st chart! Still needs some formatting to be integrated into P2
+plot(avg_child_stunting_per_country)
+```
+
 
 ## ABOUT THIS FILE: 
 
@@ -50,5 +61,6 @@ You can also embed plots, for example:
 ```{r pressure, echo=FALSE}
 plot(pressure)
 ```
+
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
