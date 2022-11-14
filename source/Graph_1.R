@@ -28,6 +28,6 @@ avg_stunting_percountry <- left_join(
 colnames(avg_stunting_percountry)[colnames(avg_stunting_percountry) == "Entity"] ="Country"
 
 avg_child_stunting_per_country <- ggplot(data = avg_stunting_percountry) +
-  geom_col(mapping = aes(x = Country, y = avg_prevalence, color = Country))
+  geom_col(mapping = aes(x = Country, y = avg_prevalence))
 
 ## Note: need to make bar titles legible... potentially use color? Or would that be bad?
