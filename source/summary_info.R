@@ -61,3 +61,12 @@ summary_info$stunting_max_value = all_data %>%
 summary_info$stunting_min_value = all_data %>%
   filter(`Prevalence of stunting, height for age (% of children under 5)` == min(`Prevalence of stunting, height for age (% of children under 5)`, na.rm = T)) %>%
   select(Entity)
+
+summary_info$uniq_Entities = length(unique(all_data$Entity))
+
+summary_info$date_range = c(max(all_data$Year), min(all_data$Year))
+
+summary_info$earliest_date = min(all_data$Year)
+summary_info$recent_date = max(all_data$Year)
+
+
