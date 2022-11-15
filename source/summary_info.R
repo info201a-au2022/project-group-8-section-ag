@@ -1,27 +1,27 @@
 ?read.csv
 library(readr)
 library(dplyr)
-global_hunger_index <- read_csv("data/global-hunger-index.csv",
+global_hunger_index <- read_csv("https://raw.githubusercontent.com/info201a-au2022/project-group-8-section-ag/main/data/global-hunger-index.csv",
                                 col_types = cols(Year = col_number(),
                                                  `Global Hunger Index (2021)` = col_number()))
 View(global_hunger_index)
 
-num_severely_food_insecure <- read_csv("data/number-of-people-severely-food-insecure.csv",
+num_severely_food_insecure <- read_csv("https://raw.githubusercontent.com/info201a-au2022/project-group-8-section-ag/main/data/number-of-people-severely-food-insecure.csv",
                                                  col_types = cols(Year = col_number(),
                                                                   `Number of severely food insecure people (million) (3-year average) | 00210071 || Value | 006132 || millions` = col_number()))
 View(num_of_people_severely_food_insecure)
 
-prevalence_undernourishment <- read_csv("data/prevalence-of-undernourishment.csv", 
+prevalence_undernourishment <- read_csv("https://raw.githubusercontent.com/info201a-au2022/project-group-8-section-ag/main/data/prevalence-of-undernourishment.csv", 
                                         col_types = cols(Year = col_number()))
 View(prevalence_undernourishment)
 
-percent_children_underweight <- read_csv("data/share-of-children-underweight.csv")
+percent_children_underweight <- read_csv("https://raw.githubusercontent.com/info201a-au2022/project-group-8-section-ag/main/data/share-of-children-underweight.csv")
 View(percent_children_underweight)
 
-children_under_5_stunting <- read_csv("data/share-of-children-younger-than-5-who-suffer-from-stunting.csv")
+children_under_5_stunting <- read_csv("https://raw.githubusercontent.com/info201a-au2022/project-group-8-section-ag/main/data/share-of-children-with-a-weight-too-low-for-their-height-wasting.csv")
 View(children_under_5_stunting)
 
-children_wasting <- read_csv("data/share-of-children-with-a-weight-too-low-for-their-height-wasting.csv")
+children_wasting <- read_csv("https://raw.githubusercontent.com/info201a-au2022/project-group-8-section-ag/main/data/share-of-children-younger-than-5-who-suffer-from-stunting.csv")
 View(children_wasting)
 
 #joined all Data here:
