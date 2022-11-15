@@ -32,6 +32,7 @@ hunger stunts growth). The harms of approaching the issue are negiligible.
 ## Table
 
  ```{kable(table)}
+ ```
 
 ## Countries Where On Average, Half Of Children Under Five Are Stunted
 ```{r, include=FALSE}
