@@ -31,6 +31,15 @@ hunger stunts growth). The harms of approaching the issue are negiligible.
 
 ## Table
 
+| Summary Statistic | Values |
+------------------------------
+| Country with the highest Global Health Index| Somalia |
+|Country with the lowest Global Health Index | Belarus|
+| Country with the highest child wasting percentage | Dijbouti|
+| Country with the lowest child wasting percentage| United States |
+|Country with the highest child stunting percentage| Ethiopia |
+|Country with the lowest child stunting percentage | Germany |
+
 ```{r, include=FALSE}
 source("../source/summary_info.R")
 source("../source/summary_table.R")
