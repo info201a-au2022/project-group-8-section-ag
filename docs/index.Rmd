@@ -40,7 +40,7 @@ source("../source/Graph_1.R")
 ```
 ```{r Graph_1, echo=FALSE}
 #here is the 1st chart! Still needs some formatting to be integrated into P2
-plot(avg_child_stunting_per_country)
+plot(most10_child_stunting)
 ```
 
 

@@ -7,9 +7,6 @@ child_stunting_under_5 <- read.csv(
 
 colnames(child_stunting_under_5)[colnames(child_stunting_under_5) == "Prevalence.of.stunting..height.for.age....of.children.under.5."] ="Prevalence_prcnt"
 
-ggplot(data = child_stunting_under_5) +
-  geom_col(mapping = aes(x = Entity, y = Prevalence_prcnt))
-
 prcnt_per_country <- child_stunting_under_5 %>%
   group_by(Entity) %>%
   summarise(sum.prcnt = sum(Prevalence_prcnt))
@@ -27,7 +24,16 @@ avg_stunting_percountry <- left_join(
 
 colnames(avg_stunting_percountry)[colnames(avg_stunting_percountry) == "Entity"] ="Country"
 
-avg_child_stunting_per_country <- ggplot(data = avg_stunting_percountry) +
+most10_stunting_countries <- avg_stunting_percountry %>%
+  arrange(avg_prevalence) %>%
+  filter(avg_prevalence >= 48.2)
+
+most10_child_stunting <- ggplot(data = most10_stunting_countries) +
   geom_col(mapping = aes(x = Country, y = avg_prevalence))
 
+#avg_child_stunting_per_country <- ggplot(data = avg_stunting_percountry) +
+#  geom_col(mapping = aes(x = Country, y = avg_prevalence))
+
 ## Note: need to make bar titles legible... potentially use color? Or would that be bad?
+
+
