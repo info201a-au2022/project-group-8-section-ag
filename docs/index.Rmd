@@ -11,7 +11,12 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Dynamic Paragraph
 
-Here is where to put the dynamic paragraph
+Abstract
+Our group was interested in exploring the relationship between world hunger and its major contributors. By using data from ourworldindata.org, we were able to identify major patterns of where and when these contributions to global hunger occur. By analyzing our data we focus our concerns on the negative health effects that come with hunger such as food insecurity, stunting in children, and the overall global hunger index contributers. By using location and the years to see how the evidence of hunger patterns have increased or decreased, we can come up with potential solutions to address the food instability we currently face. 
+
+Introduction
+One in four people globally are moderately or severely food insecure, which means that they lack consistent access to enough food to maintain an active, healthy lifestyle. World Hunger has been on the rise in recent years, despite previously declining and our project aims to find out where this rise is occurring the most. Good health and longevity rests on a foundation afforded by a diet which is both sufficient in caloric and nutritional value. Unfortunately, undernourishment continues to be a leading risk factor for death and other health consequences. By examining the connections between hunger and its causes and effects, a richness of knowledge can be extracted which can allow more urgency around the issue to spring forth, and encourage action on the part of those possessing the means to incite change. According to Action Against Hunger, global food insecurity most directly affects the impoverished, young children, women, the most socially marginalized individuals, people in conflict settings, and refugees and the displaced. The benefits of reducing world hunger include preventing its ability to ripple out and harm the development of nations, communities, and even individual humans (as hunger stunts growth). The harms of approaching the issue are negiligible. 
+
 
 ## Table
 
