@@ -1,7 +1,7 @@
 ---
-title: "Your Project Title"
-author: "project team members"
-date: "1/22/2022"
+title: "A Data-Oriented Unpacking of Global Hunger and Undernourishment"
+author: "Samaya Badrieh, Natalie Stillwell, Desiree Vera, Nikhita Vaddineni"
+date: "11/14/2022"
 output: html_document
 ---
 
@@ -9,46 +9,51 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## What is this file for?
+## Dynamic Paragraph
 
-* This file will eventually become your project report for **P02: Exploratory Data Analysis**. Specifically, you will write rmarkdown to report your exploratory data analysis.
+Here is where to put the dynamic paragraph
 
-* Please see Canvas for more details.
+## Table
 
-## ACCESSING THE /source DIRECTORY
-### Example 1: Source some code and run a function
-```{r}
-# Example 1: Note relative path, which can be read: Up one
-# directory(..), down into source (/source), and 
-# then "source" an R file (data_access.R)
-source("../source/data_access.R")
-data_access_test()
+Here is where to put the summary table
+
+## Countries Where On Average, Half Of Children Under Five Are Stunted
+```{r, include=FALSE}
+# I could only get the chart to embed after I uploaded the source code 
+source("../source/Graph_1.R")
+```
+```{r Graph_1, echo=FALSE}
+#here is the 1st chart! Still needs some formatting to be integrated into P2
+plot(most10_child_stunting)
 ```
 
-### Example 2: Initialize a variable and then use it
-```{r}
-# Example 1: This function was "sourced" above
-msg <- data_access_test(" Morgan!")
+We included this chart to show the places where food insecurity was affecting children the most. The data reveals that these seven countries - Bangladesh, Burundi, Eritrea, Guatemala, Madagascar, Timor, and Yemen - had on average 50% of their children's development stunted from malnutrition from 2015 to 2019. This is a shockingly high number, and this chart is important to show how severe the effects of hunger are on these populations and their youth.
+
+## Millions Of People Severely Food Insecure People (2015-2019)
+```{r, include=FALSE}
+source("../source/Graph_2.R")
+```
+```{r Graph_2, echo=FALSE}
+#Need to find a way to remove the geom_smooth note
+plot(food_insecurity)
 ```
 
-> `r msg` Hope you have a good day!! 
+We included this chart to show how food insecurity had shifted over time. Our dataset only goes from 2015 to 2019, but it shows that despite some dips around 2017, by 2019 there were significantly more millions of people that were severely food insecure. This is important to note because it shows that food insecurity worldwide is getting worse with time, not better, and we need to get the root causes of it quickly or more people will continue to face hunger.
 
-## ABOUT THIS FILE: 
+## Graph 3
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
+```{r, include=FALSE}
+source("../source/Graph_3.R")
+```
+```{r Graph_3, echo=FALSE}
+plot(Top_10_graph)
 ```
 
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+We chose to include this chart in our report in order to demonstrate the
+dynamics of the Global Hunger Index over time, specifically from the year 2000
+to 2020, and in the top ten "hungriest" countries as determined by our earlier
+analyses. In certain nations, such as Yemen and Madagascar, hunger appears to be
+spiking. On the other hand, the other nations appear to be experiencing plateaus
+and decreases. The main implication of this is that the changes in hunger
+worldwide are not all following a single trend, and that different approaches
+are called for in countries where trends in hunger, as well as its causes, are different.
