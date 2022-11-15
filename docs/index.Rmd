@@ -17,7 +17,7 @@ Here is where to put the dynamic paragraph
 
 Here is where to put the summary table
 
-## Countries Where On Average Half Of Children Are Stunted
+## Countries Where On Average, Half Of Children Under Five Are Stunted
 ```{r, include=FALSE}
 # I could only get the chart to embed after I uploaded the source code 
 source("../source/Graph_1.R")
@@ -27,7 +27,7 @@ source("../source/Graph_1.R")
 plot(most10_child_stunting)
 ```
 
-Here is where to put the paragraph about the chart
+We included this chart to show the places where food insecurity was affecting children the most. The data reveals that these seven countries - Bangladesh, Burundi, Eritrea, Guatemala, Madagascar, Timor, and Yemen - had on average 50% of their children's development stunted from malnutrition from 2015 to 2019. This is a shockingly high number, and this chart is important to show how severe the effects of hunger are on these populations and their youth.
 
 ## Millions Of People Were Severely Food Insecure From 2015-2019
 ```{r, include=FALSE}
@@ -38,7 +38,7 @@ source("../source/Graph_2.R")
 plot(food_insecurity)
 ```
 
-Here is where to put the paragraph about the chart
+We included this chart to show how food insecurity had shifted over time. Our dataset only goes from 2015 to 2019, but it shows that despite some dips around 2017, by 2019 there were significantly more millions of people that were severely food insecure. This is important to note because it shows that food insecurity worldwide is getting worse with time, not better, and we need to get the root causes of it quickly or more people will continue to face hunger.
 
 ## Graph 3
 Put chart here
