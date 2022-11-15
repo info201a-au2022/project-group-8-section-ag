@@ -29,7 +29,7 @@ most10_stunting_countries <- avg_stunting_percountry %>%
   filter(avg_prevalence >= 48.2)
 
 most10_child_stunting <- ggplot(data = most10_stunting_countries) +
-  geom_col(mapping = aes(x = Country, y = avg_prevalence))
+  geom_col(mapping = aes(x = Country, y = avg_prevalence, fill = "red"))
 
 #avg_child_stunting_per_country <- ggplot(data = avg_stunting_percountry) +
 #  geom_col(mapping = aes(x = Country, y = avg_prevalence))
