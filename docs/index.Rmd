@@ -17,7 +17,7 @@ Here is where to put the dynamic paragraph
 
 Here is where to put the summary table
 
-## Top Ten Countries With The Highest Average Prevalence Of Child Stunting In Children Under Five
+## Countries Where On Average Half Of Children Are Stunted
 ```{r, include=FALSE}
 # I could only get the chart to embed after I uploaded the source code 
 source("../source/Graph_1.R")

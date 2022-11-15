@@ -20,14 +20,15 @@ avg_stunting_percountry <- left_join(
   nrow_per_country,
   by = NULL
   ) %>%
-  mutate(avg_prevalence = sum.prcnt/n)
+  mutate(Average_Percent_of_Children_Stunted = sum.prcnt/n)
 
 colnames(avg_stunting_percountry)[colnames(avg_stunting_percountry) == "Entity"] ="Country"
 
 most10_stunting_countries <- avg_stunting_percountry %>%
-  arrange(avg_prevalence) %>%
-  filter(avg_prevalence >= 48.2)
+  arrange(Average_Percent_of_Children_Stunted) %>%
+  filter(Average_Percent_of_Children_Stunted >= 50)
 
 most10_child_stunting <- ggplot(data = most10_stunting_countries) +
-  geom_col(mapping = aes(x = Country, y = avg_prevalence, fill = "red"))
+  geom_col(mapping = aes(x = Country, y = Average_Percent_of_Children_Stunted)) +
+  ylim(0, 100)
 
