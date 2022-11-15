@@ -11,14 +11,14 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Dynamic Paragraph
 
-Abstract
+##### Abstract
 Our group was interested in exploring the relationship between world hunger and its major contributors. By using data from ourworldindata.org, we were able
 to identify major patterns of where and when these contributions to global hunger occur. By analyzing our data we focus our concerns on the negative health
 effects that come with hunger such as food insecurity, stunting in children, and the overall global hunger index contributers. By using location and the
 years to see how the evidence of hunger patterns have increased or decreased, we can come up with potential solutions to address the food instability we
 currently face. 
 
-Introduction
+##### Introduction
 One in four people globally are moderately or severely food insecure, which means that they lack consistent access to enough food to maintain an active,
 healthy lifestyle. World Hunger has been on the rise in recent years, despite previously declining and our project aims to find out where this rise is
 occurring the most. Good health and longevity rests on a foundation afforded by a diet which is both sufficient in caloric and nutritional value.
@@ -27,6 +27,18 @@ and its causes and effects, a richness of knowledge can be extracted which can a
 on the part of those possessing the means to incite change. According to Action Against Hunger, global food insecurity most directly affects the impoverished, young children, women, the most socially marginalized individuals, people in conflict settings, and refugees and the displaced. The benefits
 of reducing world hunger include preventing its ability to ripple out and harm the development of nations, communities, and even individual humans (as
 hunger stunts growth). The harms of approaching the issue are negiligible. 
+
+###### Research Questions
+Our questions revolve around finding patterns in the data to analyze how global hunger has been spreading over time and over the countries and the world develops in the 21st century. We want to identify if  global hunger been reduced in any areas of note over the years. We would use this data to idenfity any major political events in the years when global hunger was at its highest?
+
+###### Data Set
+This data set allows us to look at answer our research questions by giving us several difference aspects of what contributes to world hunger and how it has changed over time. It also allows us to view our data in a map format so that we can see where hunger stems from and if its near countries located next to eachother. It also lets us analyze how specific events over time which contributes this data.
+
+###### Expected Implications
+If we were to answer our research question, we would know the countries across the world that struggle the most with food instability and malnutrition. The implications of this are that humanitarian groups and governments would know best where to direct efforts and funding into reducing starvation. While the ultimate goal is to end hunger in all countries, addressing areas where hunger is especially severe or prolonged may be a good place to start. Presenting hunger data is additionally a good way to encourage people to donate or volunteer to help fight hunger, either in their own country or in others. And since our data is overtime, we will be able to see countries where starvation has been an issue for a long time compared to countries where widespread hunger has become more recent. Analysts may be able to compare this data to world events to see what changes or environments are likely to cause widespread hunger in a country. 
+
+###### Limitations
+The limitations of this project that we must address are that we don’t have many metrics on contributing/risk factors for each element of the GHI score, so we cannot test if there are any associations between certain factors and increased hunger over time. We will be able to identify where hunger is worsening, but not why. For instance, the politics of a country and potential civil unrest may contribute to the most recent, and even sudden, declines in food availability for a country or group of countries and this would not be demonstrated in the dataset as is. Additionally, how countries get their food, either by mostly imports or mostly domestically, can impact consistent food accessibility, especially in pandemic situations and times of unrest and we would not necessarily be able to identify this situation for every country in this dataset.
 
 
 ## Table
