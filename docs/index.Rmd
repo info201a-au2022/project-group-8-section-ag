@@ -29,7 +29,7 @@ plot(most10_child_stunting)
 
 Here is where to put the paragraph about the chart
 
-## How Many Millions Of People Were Severely Food Insecure From 2015-2019
+## Millions Of People Were Severely Food Insecure From 2015-2019
 ```{r, include=FALSE}
 source("../source/Graph_2.R")
 ```
