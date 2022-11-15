@@ -41,6 +41,19 @@ plot(food_insecurity)
 We included this chart to show how food insecurity had shifted over time. Our dataset only goes from 2015 to 2019, but it shows that despite some dips around 2017, by 2019 there were significantly more millions of people that were severely food insecure. This is important to note because it shows that food insecurity worldwide is getting worse with time, not better, and we need to get the root causes of it quickly or more people will continue to face hunger.
 
 ## Graph 3
-Put chart here
 
-Here is where to put the paragraph about the chart
+```{r, include=FALSE}
+source("../source/Graph_3.R")
+```
+```{r Graph_3, echo=FALSE}
+plot(Top_10_graph)
+```
+
+We chose to include this chart in our report in order to demonstrate the
+dynamics of the Global Hunger Index over time, specifically from the year 2000
+to 2020, and in the top ten "hungriest" countries as determined by our earlier
+analyses. In certain nations, such as Yemen and Madagascar, hunger appears to be
+spiking. On the other hand, the other nations appear to be experiencing plateaus
+and decreases. The main implication of this is that the changes in hunger
+worldwide are not all following a single trend, and that different approaches
+are called for in countries where trends in hunger, as well as its causes, are different.
