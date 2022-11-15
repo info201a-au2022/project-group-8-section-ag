@@ -29,8 +29,14 @@ plot(most10_child_stunting)
 
 Here is where to put the paragraph about the chart
 
-## Graph 2
-Put chart here
+## How Many Millions Of People Were Severely Food Insecure From 2015-2019
+```{r, include=FALSE}
+source("../source/Graph_2.R")
+```
+```{r Graph_2, echo = FALSE}
+#Need to find a way to remove the geom_smooth note
+plot(food_insecurity)
+```
 
 Here is where to put the paragraph about the chart
 
