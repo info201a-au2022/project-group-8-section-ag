@@ -24,7 +24,7 @@ One in four people globally are moderately or severely food insecure, which mean
 
 ## Table
 
-Here is where to put the summary table
+ ```{kable(table)}
 
 ## Countries Where On Average, Half Of Children Under Five Are Stunted
 ```{r, include=FALSE}
