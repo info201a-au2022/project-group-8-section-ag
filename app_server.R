@@ -16,6 +16,7 @@ ppl_food_insecure <- ppl_food_insecure %>%
   rename(Millions_Food_Insecure = Number.of.severely.food.insecure.people..million...3.year.average....00210071....Value...006132....millions)
 #Data frame for graph 3
 
+
 # Define server logic required to draw a histogram
 server <- function(input, output) {
   output$plot1 <- renderPlotly({
