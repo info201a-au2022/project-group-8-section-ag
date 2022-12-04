@@ -16,20 +16,19 @@ intro_panel <- tabPanel(
 )
 
 # This is where the code starts for the first interactive panel
+graph1_input <- selectInput(
+  inputId = "var_g1",
+  label = "Select A Country",
+  choices = c(child_stunting["Entity"]),
+  selected = "Afghanistan"
+)
+
 first_int_sidebar_content <- sidebarPanel(
-  selectInput(
-    "var_graph1",
-    label = "Graph 1 Variable",
-    choices = list(
-      "Percent Pervalence" = "Prevalence.of.stunting..height.for.age....of.children.under.5.",
-      "Year" = "Year",
-      "Country" = "Entity"
-    )
-  )
+  graph1_input
 )
 
 first_int_main_content <- mainPanel(
-  plotlyOutput("Graph_1")
+  plotlyOutput("graph_1")
 )
 
 first_int_panel <- tabPanel(

@@ -3,68 +3,34 @@
 
 library(shiny)
 
-#These are the loaded dat frames for the graphs
-#global_hunger <- read.csv('./data/global-hunger-index.csv', 
-#                          stringsAsFactors = FALSE)
-#food_insecure <- read.csv('./data/number-of-people-severely-food-insecure.csv',
-#                                 stringsAsFactors = FALSE)
-#undernourishment <- read.csv('./data/prevalence-of-undernourishment.csv',
-#                             stringsAsFactors = FALSE)
-#children_underweight <- read.csv('./data/share-of-children-underweight.csv',
-#                                 stringsAsFactors = FALSE)
-#children_low_weight <- read.csv(
-#  './data/share-of-children-with-a-weight-too-low-for-their-height-wasting.csv',
-#  stringsAsFactors = FALSE)
-#child_stunting <- read.csv(
-#  './data/share-of-children-younger-than-5-who-suffer-from-stunting.csv',
-#  stringsAsFactors = FALSE)
-
-#Here is the source for graph 1
-source('./source/Graph_1.R')
-
-#Here is the code for graph 2
-
-
-#Here is the code for graph 3
-
+#Data frame for graph 1
+child_stunting <- read.csv(
+  './data/share-of-children-younger-than-5-who-suffer-from-stunting.csv', 
+  stringsAsFactors = FALSE)
+child_stunting <- child_stunting %>%
+  rename(Prevalence.of.stunting..height.for.age....of.children.under.5. = 'Prevalence_prcnt')
+#Data frame for graph 2
+#Data frame for graph 3
 
 # Define server logic required to draw a histogram
-server <- shinyServer(function(input, output) {
-
-    output$Graph_1 <- renderPlot({
-
-        # generate bins based on input$bins from ui.R
-        x    <- faithful[, 2]
-        bins <- seq(min(x), max(x), length.out = input$bins + 1)
-
-        # draw the histogram with the specified number of bins
-        hist(x, breaks = bins, col = 'darkgray', border = 'white',
-             xlab = 'Waiting time to next eruption (in mins)',
-             main = 'Histogram of waiting times')
-
-    })
+server <- function(input, output) {
+  output$graph_1 <- renderPlot({
+    child_stunting <- child_stunting %>%
+      filter(Entity = input$var_g1)
     
-    output$Graph_1 <- renderPlotly({
-      x <- avg_stunting_percountry[Country]
-      
-      return(build_scatter(joined_data, input$state_picked))
-    })
-
-})
-
-
-
-#colnames(child_stunting)[colnames(child_stunting) 
-#== "Prevalence.of.stunting..height.for.age....of.children.under.5."] ="Prevalence_prcnt"
-#prcnt_per_country <- child_stunting %>%
-#  group_by(Entity) %>%
-#  summarise(sum.prcnt = sum(Prevalence_prcnt))
-#nrow_per_country <- child_stunting %>%
-#  group_by(Entity) %>%
-#  count(Entity)
-#avg_stunting_percountry <- left_join(
-#  prcnt_per_country,
-#  nrow_per_country,
-#  by = "Entity"
-#) %>%
-#  mutate(Average_Percent_of_Children_Stunted = sum.prcnt/n)
+    
+    # Use the filtered data set to create a ggplot2 scatter plot with the
+    # user-select column on the x-axis, and the price on the y-axis,
+    # and encode the "cut" of each diamond using color
+    # Save your plot as a variable.
+    plot_1 <- ggplot(
+      data = child_stunting,
+      mapping = aes_col(x = "year", y = "Prevalence_prcnt")
+    )
+    # Finally, if the "trendline" checkbox is selected, you should add (+)
+    # a geom_smooth geometry (with `se=FALSE`) to your plot
+    # Hint: use an if statement to see if you need to add more geoms to the plot
+    # Be sure and return the completed plot!
+    plot_1
+  })
+}
