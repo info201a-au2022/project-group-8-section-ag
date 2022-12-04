@@ -17,9 +17,9 @@ intro_panel <- tabPanel(
 
 # This is where the code starts for the first interactive panel
 graph1_input <- selectInput(
-  inputId = "var_g1",
+  inputId = "var_p1",
   label = "Select A Country",
-  choices = c(child_stunting["Entity"]),
+  choices = c(unique(child_stunting["Entity"])),
   selected = "Afghanistan"
 )
 
@@ -28,17 +28,34 @@ first_int_sidebar_content <- sidebarPanel(
 )
 
 first_int_main_content <- mainPanel(
-  plotlyOutput("graph_1")
+  plotlyOutput("plot1")
 )
 
 first_int_panel <- tabPanel(
   "First Interactive Panel",
   titlePanel("First Interactive Panel"),
-  first_int_sidebar_content,
-  
+  sidebarLayout(
+    first_int_sidebar_content,
+    first_int_main_content
+  )
 )
 
 # This is where the code starts for the second interactive panel
+#graph2_input <- selectInput(
+#  inputId = "var_g2",
+#  label = "",
+#  choices = c(child_stunting[""]),
+#  selected = ""
+#)
+
+#first_int_sidebar_content <- sidebarPanel(
+#  graph1_input
+#)
+
+#first_int_main_content <- mainPanel(
+#  plotlyOutput("graph_1")
+#)
+
 second_int_panel <- tabPanel(
   "Second Interactive Panel",
   titlePanel("Second Interactive Panel")
