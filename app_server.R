@@ -29,7 +29,8 @@ server <- function(input, output) {
         title = "Percent Of Children Stunted Per Year",
         x = "Year",
         y = "Percent of Children Stunted",
-      ))
+      ) + ylim(0, 75) + xlim(1983, 2020)
+      )
     print(plot_1)
   })
   output$plot2 <- renderPlotly({
