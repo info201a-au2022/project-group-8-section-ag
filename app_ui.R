@@ -11,7 +11,7 @@ intro_panel <- tabPanel(
   "Introduction",
   titlePanel("Introduction"),
   mainPanel(
-    paste("Enter Intro Text Here")
+    print("Enter Intro Text Here")
   )
 )
 
@@ -24,7 +24,11 @@ graph1_input <- selectInput(
 )
 
 first_int_sidebar_content <- sidebarPanel(
-  graph1_input
+  graph1_input,
+  print("Child stunting is one of the leading measures use to assess childhood malnutrition.
+        What does this mean? Children are considered to be stunted when they are unable to grow
+        to their expected height and developement due to diease, poor health, and hunger. This 
+        graph is useful for showing trends of malnutrition in children over time.")
 )
 
 first_int_main_content <- mainPanel(
@@ -32,8 +36,8 @@ first_int_main_content <- mainPanel(
 )
 
 first_int_panel <- tabPanel(
-  "First Interactive Panel",
-  titlePanel("First Interactive Panel"),
+  "Child Stunting",
+  titlePanel("Percent Of Children Stunted In Each Country"),
   sidebarLayout(
     first_int_sidebar_content,
     first_int_main_content
@@ -41,25 +45,36 @@ first_int_panel <- tabPanel(
 )
 
 # This is where the code starts for the second interactive panel
-#graph2_input <- selectInput(
-#  inputId = "var_g2",
-#  label = "",
-#  choices = c(child_stunting[""]),
-#  selected = ""
-#)
+graph2_input <- selectInput(
+  inputId = "var_p2",
+  label = "Select A Country",
+  choices = c(unique(ppl_food_insecure["Entity"])),
+  selected = "Afghanistan"
 
-#first_int_sidebar_content <- sidebarPanel(
-#  graph1_input
-#)
+#  label = "Select A Year",
+#  min = 2015,
+#  max = 2019,
+#  value = 2017
+)
 
-#first_int_main_content <- mainPanel(
-#  plotlyOutput("graph_1")
-#)
+second_int_sidebar_content <- sidebarPanel(
+  graph2_input,
+  print("Explanation of graph")
+)
+
+second_int_main_content <- mainPanel(
+  plotlyOutput("plot2")
+)
 
 second_int_panel <- tabPanel(
   "Second Interactive Panel",
-  titlePanel("Second Interactive Panel")
+  titlePanel("Second Interactive Panel"),
+  sidebarLayout(
+    second_int_sidebar_content,
+    second_int_main_content
+  )
 )
+
 
 # This is where the code starts for the third interactive panel
 third_int_panel <- tabPanel(
