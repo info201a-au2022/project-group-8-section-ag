@@ -48,4 +48,7 @@ server <- function(input, output) {
     )
     print(plot_2)
   })
+  output$plot3 <- renderPlotly({
+    
+  })
 }
