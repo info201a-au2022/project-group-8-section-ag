@@ -1,4 +1,7 @@
 library(shiny)
+library(ggplot2)
+library(plotly)
+library(dplyr)
 
 #You will need an intro page that shows up first
 #Followed by 3 interactive pages based off your graph
@@ -28,7 +31,8 @@ first_int_sidebar_content <- sidebarPanel(
   print("Child stunting is one of the leading measures use to assess childhood malnutrition.
         What does this mean? Children are considered to be stunted when they are unable to grow
         to their expected height and developement due to diease, poor health, and hunger. This 
-        graph is useful for showing trends of malnutrition in children over time.")
+        graph is useful for showing trends of malnutrition in children over time, and seeing which
+        countries have worsening trends.")
 )
 
 first_int_main_content <- mainPanel(
@@ -50,16 +54,15 @@ graph2_input <- selectInput(
   label = "Select A Country",
   choices = c(unique(ppl_food_insecure["Entity"])),
   selected = "Afghanistan"
-
-#  label = "Select A Year",
-#  min = 2015,
-#  max = 2019,
-#  value = 2017
 )
 
 second_int_sidebar_content <- sidebarPanel(
   graph2_input,
-  print("Explanation of graph")
+  print("Food insecurity is when people do not have stable access to affordable food and
+        nutrition. Millions of people are food insecure across the world, which can cause a
+        variety of damaging health affects or even starvation. This graph is useful in knowing
+        which countries have the most food insecure people, and whether this is an environment
+        that was created recently or ongoing.")
 )
 
 second_int_main_content <- mainPanel(
@@ -67,8 +70,8 @@ second_int_main_content <- mainPanel(
 )
 
 second_int_panel <- tabPanel(
-  "Second Interactive Panel",
-  titlePanel("Second Interactive Panel"),
+  "Food Insecurity",
+  titlePanel("Millions of People Who Are Food Insecure"),
   sidebarLayout(
     second_int_sidebar_content,
     second_int_main_content
@@ -96,7 +99,7 @@ report_panel <- tabPanel(
 
 # This is where the ui is defined
 ui <- navbarPage(
-  "Name For Our App",
+  "Global Hunger And Malnourishment",
   intro_panel,
   first_int_panel,
   second_int_panel,
