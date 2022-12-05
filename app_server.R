@@ -6,7 +6,6 @@ library(ggplot2)
 library(plotly)
 library(dplyr)
 
-
 #Data frame for plot 1
 child_stunting <- read.csv('./data/share-of-children-younger-than-5-who-suffer-from-stunting.csv', stringsAsFactors = FALSE)
 child_stunting <- child_stunting %>%
@@ -19,7 +18,10 @@ ppl_food_insecure <- ppl_food_insecure %>%
 hunger_index <- read.csv('./data/global-hunger-index.csv', stringsAsFactors = FALSE)
 hunger_index <- hunger_index %>%
   rename(global_hunger_index = Global.Hunger.Index..2021.)
-
+#Summary takeaway graphs
+source('./source/Graph_1.R')
+source('./source/Graph_2.R')
+source('./source/Graph_3.R')
 
 # Define server logic required to draw a histogram
 server <- function(input, output) {
@@ -64,5 +66,14 @@ server <- function(input, output) {
           y = "Global Hunger Index",
     ))
     print(plot_3)
+  })
+  output$graph_1 <- renderPlotly({
+    most10_child_stunting
+  })
+  output$graph_2 <- renderPlotly({
+    food_insecurity
+  })
+  output$graph_3 <- renderPlotly({
+    Top_10_graph
   })
 }

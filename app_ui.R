@@ -89,7 +89,7 @@ graph3_input <- selectInput(
 
 third_int_sidebar_content <- sidebarPanel(
   graph3_input,
-  print("The **Global Hunger Index (GHI)** Is a tool which was designed in order
+  print("The Global Hunger Index (GHI) is a tool which was designed in order
          to track and evaluate hunger globally, as well as by region and by
          country. They GHI is calculated annualy, and its results appear in a
          report issued each year. Global progress in ending hunger is at a near 
@@ -113,9 +113,17 @@ third_int_panel <- tabPanel(
 )
 
 # This is where the code starts for the summary panel
+
+summary_main_content <- mainPanel(
+  plotlyOutput("graph_1"),
+  plotlyOutput("graph_2"),
+  plotlyOutput("graph_3")
+)
+
 summary_panel <- tabPanel(
-  "Summary Takeaways Panel",
-  titlePanel("Summary Takeaways Panel")
+  "Summary",
+  titlePanel("What We Found"),
+  summary_main_content
 )
 
 # This is where the code starts for the report panel
