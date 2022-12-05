@@ -5,9 +5,10 @@ account: nstill77
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 7810014
-bundleId: 6590902
+bundleId: 6591469
 url: https://nstill77.shinyapps.io/project-group-8-section-ag/
-when: 1670203487.16467
-lastSyncTime: 1670203487.16476
+when: 1670211525.91471
+lastSyncTime: 1670211525.91472
 asMultiple: FALSE
 asStatic: FALSE
+ignoredFiles: instructions/p01-proposal-requirements.md|instructions/project-design-brief.pdf|instructions/README.md|LICENSE|README.md
