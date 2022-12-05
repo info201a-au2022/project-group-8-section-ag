@@ -1,5 +1,3 @@
-# A Data-Oriented Unpacking of Global Hunger and Undernourishment
-
 <center>
 
 ![Picture Of A Globe On A Plate To Represent World Hunger](https://raw.githubusercontent.com/info201a-au2022/project-group-8-section-ag/main/docs/World-Hunger-Photo.jpg)
