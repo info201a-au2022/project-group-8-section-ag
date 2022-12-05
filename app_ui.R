@@ -113,23 +113,40 @@ third_int_panel <- tabPanel(
 )
 
 # This is where the code starts for the summary panel
+# Note: All summary graphs are interactive as well, but not to the same extent as interactive pages
+## (only to the extent of normal plotly graphs!)
 
 summary_main_content <- mainPanel(
+  h3("Child Stunting"),
   print("Our first takeaway is that child stunting is a pressing issue in many countries; 
-  so pressing in fact that there were at least 7 countries where over 50% of children were physically 
-  impacted by malnutrition.  We included this chart to show the places where food insecurity was
-  affecting children the most. The data reveals that these seven countries - Bangladesh, 
-  Burundi, Eritrea, Guatemala, Madagascar, Timor, and Yemen - had on average 50% of their children’s 
-  development stunted from malnutrition from 2015 to 2019. Understanding and addressing where child stunting
-  is the worse is a necessary step in making sure children are given the necessary access to nutrition."),
+        so pressing in fact that there were at least 7 countries where over 50% of children were physically
+        impacted by malnutrition. Understanding and addressing where child stunting
+        is the worst is a necessary step in making sure children are given the necessary access to nutrition."),
+  p(" "),
   plotlyOutput("graph_1"),
+  h3("Food Insecurity"),
+  print("Our second takeaway is that, globally, food insecurity worldwide looks to be increasing. This is 
+        concerning, as populations are also continuing to rise. This means more mouths to feed and a need
+        to address access to food quickly. Looking where food insecurity is the worst and understanding where
+        it has been persistent the longest is important to making sure humanitarian efforts provide food where
+        it is most needed."),
+  p(" "),
   plotlyOutput("graph_2"),
+  h3("Global Hunger Index"),
+  print("As previously mentioned, is is clear that food insecurity - one of the main contributors to hunger - has been
+        on the rise since 2015. However, our final takeaway is that hunger is only worsening in certain places, not everywhere.
+        This is critical to thinking about how we fight hunger; some countries who have been very high on the global hunger 
+        index are reducing hunger, while others are struggling even more. In nations such as Yemen and Madagascar, 
+        hunger appears to be spiking. On the other hand, the other nations appear to be experiencing plateaus and decreases.
+        The main implication of this is that the changes in hunger worldwide are not all following a single trend, 
+        and that different approaches are called for in countries where trends in hunger, as well as its causes, are different."),
+  p(" "),
   plotlyOutput("graph_3")
 )
 
 summary_panel <- tabPanel(
   "Summary",
-  titlePanel("What We Found"),
+  titlePanel("Our Takeaways From The Data"),
   summary_main_content
 )
 
