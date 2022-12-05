@@ -157,6 +157,9 @@ summary_panel <- tabPanel(
 report_panel <- tabPanel(
   "Report Panel",
   titlePanel("Report Panel"),
+  mainPanel(
+    includeMarkdown('./docs/Summary_Markdown.md')
+  )
 )
 
 # This is where the ui is defined

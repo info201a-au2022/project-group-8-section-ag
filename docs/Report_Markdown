@@ -1,0 +1,100 @@
+# A Data-Oriented Unpacking of Global Hunger and Undernourishment
+
+## Code Name
+country_hunger
+## Authors
+Samaya Badrieh, Natalie Stillwell, Desiree Vera
+## Affilitation
+The University of Washington
+## Date
+31 October, 2022
+## Abstract
+We are concerned with global hunger, and how starvation and food insecurity across countries contribute to the undernourishment of populations. We are concerned with this because prolonged hunger can have negative health effects on many, especially children, and severely impact a person’s quality of life. To address this concern, we plan to compare hunger and malnutrition over time by country, as targeting countries where starvation is the worst is a critical step in coming up with solutions to address food instability.
+## Keywords
+Starvation; food insecurity; undernourishment; malnutrition; Global Hunger Index
+## Introduction
+One in four people globally are moderately or severely food insecure, which means that they lack consistent access to enough food to maintain an active, healthy lifestyle. World Hunger has been on the rise in recent years, despite previously declining and our project aims to find out where this rise is occurring the most. We are analysing data from the Global Hunger Index and other hunger undernourishment data collected by OurWorldInData in order to examine where GHI scores have been the highest in recent years, thus most alarming and how each component of the GHI score compares in those areas. The GHI Index is based on the following four indicators, “Undernourishment: the proportion of undernourished people as a percentage of the population (reflecting the share of the population with insufficient caloric intake); Child Wasting: the proportion of children under the age of five who suffer from wasting (low weight for their height, reflecting acute undernutrition); Child Stunting: the proportion of children under the age of five who suffer from stunting (low height for their age, reflecting chronic undernutrition); and Child Mortality: the mortality rate of children under the age of five (partially reflecting the fatal synergy of inadequate nutrition and unhealthy environments).” Understanding which of these indicators are contributing most to a high GHI score will inform future additional efforts to end hunger in each country and can help other countries see what types of efforts their international aid would be most useful toward.
+
+## Problem Domain
+**Background**
+
+- Good health and longevity rests on a foundation afforded by a diet which is both sufficient in caloric and nutritional value. Unfortunately, undernourishment continues to be a leading risk factor for death and other health consequences. By examining the connections between hunger and its causes and effects, a richness of knowledge can be extracted which can allow more urgency around the issue to spring forth, and encourage action on the part of those possessing the means to incite change.
+
+**Direct & Indirect Stakeholders**
+- According to Action Against Hunger, global food insecurity most directly affects the impoverished, young children, women, the most socially marginalized individuals, people in conflict settings, and refugees and the displaced.<sub>1</sub> Indirect stakeholders are those working in the food supply chain who experience extra strain thanks to the insatiable demand for what they can provide. Those who increase access to food in critical areas, such as food banks or small family-owned grocery stores located in “food deserts”, have a hard time protecting their stock and preventing people from taking advantage of their generosity.
+
+**Human Values**
+- Our human values are how we guide our project to take into account the human element of what we are attempting to record through how we process our data.<sub>2</sub> These are Openness, empathy, love and respect for the dignity and health of our fellow humans.
+
+**Potential Benefits and Harms**
+- Benefits of reducing world hunger include reducing its ability to ripple out and harm the development of nations, communities, and even individual humans (as hunger stunts growth).<msub>3</sub> The harms of approaching the issue are minimal, there is mostly very much good that can be done in this area. However, it is possible that by attempting to tackle world hunger rather than general trends in overpopulation, the problem will simply get worse, and we will always be behind the curve on the issue.
+
+## Research Questions
+**1. How has child stunting within nations changed over time?**
+
+  - The stunting of growth in children is one of the most critical markers of childhood malnutrition. This is because children need nutrients in order to avoid being stunted. If a an increasing number of children within an area are stunted, that suggests that hunger within that nation is disproportionately affecting youth, which indicates that more social programs and feeding programs in schools, perhaps, are called for to solve the issue.
+
+**2. How has the number of millions of food insecure people within nations changed over time?**
+
+  - Food insecurity is, in other words, when food is not consistently and easily accessible to people within a nation. Millions of people are food insecure across the world, so it is clearly a matter which requires a closer look. By answering this question, we can also figure out whether we need to focus on the issue of food insecurity specifically, or alternative solutions to hunger.
+
+**3. How has the Global Hunger Index within a nation changed over time?**
+
+  - The Global Hunger Index (GHI) is a specific metric designed to pragmatically provide a summary of general hunger within a nation. If the global hunger index within a nation is increasing, then this suggests that a multi-faceted approach to the issue which stretches across multiple different societal areas is called for.
+
+
+
+
+## The Dataset
+
+Our data has several subsections evaluating, undernurishment in the world by location, age group, food insecurity, etc.
+
+| Chart Title      | Purpose       | # of Observations | # of Variables | Citations |
+|------------------|---------------|-------------------|----------------|-----------|
+|Undernourishment  | The purpose of these charts is to share the prevalence of undernourishment across the planet. It also highlights the effect of food insecurity on the population and how that directly correlates with undernourishment. | 188 | Country Date % Change in prevalence of undernouri-shment(3)| Share of the population that is undernourished|
+|Childhood Malnutrition | The purpose of these graphs is to show children facing undernourishmnet are showing its effects in two specific ways. Stunting is observed in severe malnutrition cases where the height of children is two standard deviations below the mean height of children their age. The second factor is wasting. Here, the children are dangerously skinny for their height. It shows the severity of hunger on our newest generation. | 165 |Country Date % Change in prevalence of stunting/wasting/ underweight (3)| Malnutrition: Share of children who are stunted, 2020 Malnutrition: Share of children who are wasted, 2020 Malnutrition: Share of children who are underweight, 2020 |
+| The Global Hunger Index | The Global Hunger Index takes into account four of the pieces mentioned above: undernourishment, child wasting, child stunting, and child mortality. It allows us to understand how all three play a role on each individual country overtime. | 157 | Country Year % change in global hunger based on the 4 parts explained in the purpose (3) | Global Hunger Index, 2021|
+| Long-term decline in undernourishment | This graph highlights the deep lasting effects of undernourishment on the population. It analyzes how developing countries have been noticing a decline in undernourishment over time. | 1 (developing countries all clubbed as 1) | Year % change in prevalence of undernourishment in developing countries (2) | Prevalence of undernourishment in developing countries, 1970 to 2015 |
+| Food Insecurity | These graphs analyze food insecurity specifically. It looks at regions and the prevalence of this insecurity. It also looks at the correlation of different levels of  food insecurity and poverty as well. | 164 |Countries Years % change in prevalence of food insecurity in the total population (3) | Share of population with severe food insecurity, 2019 Number of people who are severely food insecure, 2019 |
+
+We got our data from the website, ourworldindata.org, which uses data from WHO, the food security indicator, and other reliable data collection sites. This data set allows us to look at answer our research questions by giving us several difference aspects of what contributes to world hunger and how it has changed over time. It also allows us to view our data in a map format so that we can see where hunger stems from and if its near countries located next to eachother. It also lets us analyze how specific events over time which contributes this data.
+
+## Findings
+
+**1. How has child stunting within nations changed over time?**
+
+  - Child stunting has generally been on the decline, or plateauing over the past few years which were recorded in our dataset. This is so fascinating to the research team, because we've found that even in the top ten countries with child stunting, many are showing declining child stunting. In Bangladesh, for example, child stunting has decreased between the mid 90s and late 2010s from over 60% to closer to 30%. This is a huge change, and one of the more dramatic changes we've seen in our dataset. Other countries have seen more shallow decreases, which appear to be much closer to plateaus. In the nation of Jordan, for example, child stunting has decreased from around 20% to closer to 10% which is still cut by half, but also is a plateau in comparison to Bangladesh.
+
+**2. How has the number of millions of food insecure people within nations changed over time?**
+
+  - It appears as though the number of millions of people who are food insecure (in other words, people who are unable to consistently and safely access nutritious food) has decreased in most nations. This is a fascinating trend, because it shifts our attention away from childhood nutrition, and more to supply chains, the existence of "food deserts", and impacts of global food crisis events. As we can see in the first nation on our list, as an example, which is Afghanistan, there appears to be a very steady climb in hunger. It is interesting to note other trends that we see at play in other countries, however. In Japan, for instance, we see a growth in food insecurity as well. However, we also see that it is closer to a plateau. This checks out, because Japan is a wealthier country than Afghanistan.
+
+**3. How has the Global Hunger Index within a nation changed over time?**
+
+  - The Global Hunger Index (GHI) appears to be on the decline in many countries. In notable countries which are the top 10 "most hungry" such as Burundi or Bangladesh, the Global Hunger Index is shockingly decreasing somewhat dramatically. In a few countries there is a plateau, but this is less common than a decrease in the metric of Global Hunger Index. This is the case for, for example, Estonia. This shifts our attention back to our second research question, which shows a more pressing situation.
+
+## Discussion
+
+To summarize, our findings were that, first, in terms of how child stunting within nations has changed over time, our data appears to reflect that child stunting within nations has been either on the decline over time, or showing a plateau pattern. Secondly, we discovered that when it came to the question of how the number of millions of food insecure people within nations changed over time, it seems as though the number of millions of food insecure people in nations has been increasing over time. Finally, the Global Hunger Index (GHI) within nations appeared to be on the decline in most of the countries which we looked at.
+
+This is interesting considering the direct implications of each of the three metrics which we considered while manipulating, analyzing, and graphing the data for this project. The first metric, child stunting in nations across the years, implies that youth are disproportionately impacted by hunger when child stunting is occurring at a high rate. What this would mean is that social programs targeting schools, social clubs, local libraries and facilities used by children which feed kids in those locations are important to implement. However, as we can see, child stunting is on the decline, so perhaps this is not the main source of world hunger these days. That is not to say that it is not important to continue to pursue the aforementioned programs, just that they may not be the most effective way at lowering world hunger currently. The second metric, food insecurity in nations over time, represents impacts on supply chains and how safe and accessible nutritious food is. This is important because this is the area we measured which showed an actual increasing trend. This very likely is the result of things like the impacts of climate change, covid, and general social unrest. The implications of this are that we need to do more to target these sources of food insecurity which destroy crops and make it dangerous to go out to the store to buy food. Covid interventions are extremely important, as is diplomacy and protecting our environment. Lastly, we have the metric of the global health index. It shows that there is overall a very positive situation regarding world hunger. In general, world hunger is decreasing as an implication of the decreasing GHI. However, food insecurity increasing is still a major problem, and can be independent of world hunger.
+
+## Conclusion
+
+This report covers a comprehensive dataset with numerous interesting variables and conclusions which could be drawn from them. In the end, of all of the possible conclusions which could be drawn from the dataset, the one which is made most obvious is revealed by the three different graphical analyses we teased out of this large, complex dataset. The first graphical analysis on child stunting revealed that child stunting is actually on the decline. This means that programs targeting child hunger should continue to be implemented, but perhaps should not be highlighted as the main source of current concern around getting people nutritious food. Our third analysis (to skip forward) concerned the Global Hunger Index. This analysis revealed an overall decline in the Global Hunger Index. This is fascinating, because it means that overall, general Global Hunger is perhaps not the biggest concern. This ought to signal to those who read our report that a more specific approach to the betterment of nutrition and nourishment worldwide is called for. When we finally reach our third graphical analysis, we see at last what exactly the global food situation calls for going forward. Our second graphical analysis was on food insecurity. This graph showed an overall increase in food insecurity. This is important, because it means that we ought to be focusing more on helping people maintain preexisting food sources. Things like climate change, social changes, war, and the covid pandemic all affect food security. Climate change destroys farmland, social changes can impact which groups are being deprived of food sources, war can disrupt supply chains, as well as the covid pandemic. In addition, the pandemic made people afraid to do things like go to work or make a trip to the grocery store, which very directly impacted food security and access.
+
+The final point, then, is that social programs targeting hunger in children should not be our main priority in improving the food situation in the world, that something more specific than a general approach to world hunger is necessary, and that, ultimately, improving supply chain access, anti-covid precautions such as masking and vaccination, and implementing diplomacy to minimize the disruptive impact of conflict on food situations, should be the main approach of the anti-hunger movement going forward. More specific applications implementing this knowledge could be working on improving food deserts by opening grocery stores, then making sure those shops are well stocked and affordable with proper covid precautions and in demilitarized areas.
+
+## Acknowledgements
+We would like to say a big thank you to our TA, Rona, for helping answer all
+sorts of questions along the way!
+
+## Appendix A: Questions
+Should we still have included parts which were in the proposal that weren't obvious if they were required to be in the report?
+
+## References
+1. Who Does Hunger Affect? (2022, October 4). actionagainsthunger.org. https://www.actionagainsthunger.org/the-hunger-crisis/world-hunger-facts/who-does-hunger-affect/
+
+2. Human Values. (2016, August 8). grainesdepaix.org. https://www.google.com/url?q=https://www.grainesdepaix.org/en/resources/peace-dictionary/human-values&sa=D&source=docs&ust=1667267691221274&usg=AOvVaw2AXtJ79NWFJbNM5qTMZLaW
+
+3. 5 Reasons to Care about Ending Hunger. (2018, October 15). unfoundation.org. https://unfoundation.org/blog/post/5-reasons-care-end-hunger/
