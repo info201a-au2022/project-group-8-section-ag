@@ -155,10 +155,10 @@ summary_panel <- tabPanel(
 
 # This is where the code starts for the report panel
 report_panel <- tabPanel(
-  "Report Panel",
-  titlePanel("Report Panel"),
+  "Report",
+  titlePanel("Report"),
   mainPanel(
-    includeMarkdown('./docs/Summary_Markdown.md')
+    includeMarkdown('./docs/Report_Markdown')
   )
 )
 
