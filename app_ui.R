@@ -23,6 +23,7 @@ graph1_input <- selectInput(
   inputId = "var_p1",
   label = "Select A Country",
   choices = c(unique(child_stunting["Entity"])),
+  # to do
   selected = "Afghanistan"
 )
 
@@ -53,6 +54,7 @@ graph2_input <- selectInput(
   inputId = "var_p2",
   label = "Select A Country",
   choices = c(unique(ppl_food_insecure["Entity"])),
+  # to do
   selected = "Afghanistan"
 )
 
@@ -84,6 +86,7 @@ graph3_input <- selectInput(
   inputId = "var_p3",
   label = "Select A Country",
   choices = c(unique(hunger_index["Entity"])),
+  # to do
   selected = "Afghanistan"
 )
 

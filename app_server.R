@@ -19,6 +19,9 @@ hunger_index <- read.csv('./data/global-hunger-index.csv', stringsAsFactors = FA
 hunger_index <- hunger_index %>%
   rename(global_hunger_index = Global.Hunger.Index..2021.)
 
+#choices = c(unique(child_stunting["Entity"]))
+#choices = c(unique(ppl_food_insecure["Entity"]))
+
 
 # Define server logic required to draw a histogram
 server <- function(input, output) {
