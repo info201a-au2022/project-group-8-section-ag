@@ -123,7 +123,8 @@ summary_main_content <- mainPanel(
         impacted by malnutrition. Understanding and addressing where child stunting
         is the worst is a necessary step in making sure children are given the necessary access to nutrition."),
   p(" "),
-  plotlyOutput("graph_1"),
+#  plotlyOutput("graph_1"),
+img(src = "https://github.com/info201a-au2022/project-group-8-section-ag/blob/fe1b839ee697920f844ab7bb266442484c4faba3/docs/Graph_1_Screenshot.png"),
   h3("Food Insecurity"),
   print("Our second takeaway is that, globally, food insecurity worldwide looks to be increasing. This is 
         concerning, as populations are also continuing to rise. This means more mouths to feed and a need
@@ -131,7 +132,7 @@ summary_main_content <- mainPanel(
         it has been persistent the longest is important to making sure humanitarian efforts provide food where
         it is most needed."),
   p(" "),
-  plotlyOutput("graph_2"),
+#  plotlyOutput("graph_2"),
   h3("Global Hunger Index"),
   print("As previously mentioned, is is clear that food insecurity - one of the main contributors to hunger - has been
         on the rise since 2015. However, our final takeaway is that hunger is only worsening in certain places, not everywhere.
@@ -141,7 +142,7 @@ summary_main_content <- mainPanel(
         The main implication of this is that the changes in hunger worldwide are not all following a single trend, 
         and that different approaches are called for in countries where trends in hunger, as well as its causes, are different."),
   p(" "),
-  plotlyOutput("graph_3")
+#  plotlyOutput("graph_3")
 )
 
 summary_panel <- tabPanel(
