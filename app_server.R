@@ -62,7 +62,8 @@ server <- function(input, output) {
           title = "Global Hunger Index Per Year",
           x = "Year",
           y = "Global Hunger Index",
-    ))
+    ) + ylim(0, 70)
+    ) 
     print(plot_3)
   })
   output$graph_1 <- renderPlotly({
