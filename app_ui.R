@@ -115,6 +115,13 @@ third_int_panel <- tabPanel(
 # This is where the code starts for the summary panel
 
 summary_main_content <- mainPanel(
+  print("Our first takeaway is that child stunting is a pressing issue in many countries; 
+  so pressing in fact that there were at least 7 countries where over 50% of children were physically 
+  impacted by malnutrition.  We included this chart to show the places where food insecurity was
+  affecting children the most. The data reveals that these seven countries - Bangladesh, 
+  Burundi, Eritrea, Guatemala, Madagascar, Timor, and Yemen - had on average 50% of their children’s 
+  development stunted from malnutrition from 2015 to 2019. Understanding and addressing where child stunting
+  is the worse is a necessary step in making sure children are given the necessary access to nutrition."),
   plotlyOutput("graph_1"),
   plotlyOutput("graph_2"),
   plotlyOutput("graph_3")

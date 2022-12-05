@@ -32,5 +32,5 @@ most10_child_stunting <- ggplot(data = most10_stunting_countries) +
   geom_col(mapping = aes(x = Country, y = Average_Percent_of_Children_Stunted)) +
   ylim(0, 100) +
   labs(y = "Average % Children Stunted", x = "Country", title = 
-                      "Top 10 Countries With The Most Child Stunting")
+                      "Countries Where Most Children Are Malnourished")
 
