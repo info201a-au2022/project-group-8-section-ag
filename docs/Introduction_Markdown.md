@@ -2,7 +2,7 @@
 
 ![Picture Of A Globe On A Plate To Represent World Hunger](https://raw.githubusercontent.com/info201a-au2022/project-group-8-section-ag/main/docs/World-Hunger-Photo.jpg)
 
-[*Image Source Link*](https://givingcompass.org/article/tracking-progress-on-ending-world-hunger)
+[*Image Citation*](https://givingcompass.org/article/tracking-progress-on-ending-world-hunger)
 
 </center>
 
