@@ -2,7 +2,7 @@ library(shiny)
 library(ggplot2)
 library(plotly)
 library(dplyr)
-
+library(ggmap)
 source("app_server.R")
 source("app_ui.R")
 
