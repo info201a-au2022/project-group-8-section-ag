@@ -64,13 +64,13 @@ server <- function(input, output) {
     ))
     print(plot_3)
   })
-#  output$graph_1 <- renderPlotly({
-#    most10_child_stunting
-#  })
-#  output$graph_2 <- renderPlotly({
-#    food_insecurity
-#  })
-#  output$graph_3 <- renderPlotly({
-#    Top_10_graph
-#  })
+  output$graph_1 <- renderPlotly({
+    most10_child_stunting
+  })
+  output$graph_2 <- renderPlotly({
+    food_insecurity
+  })
+  output$graph_3 <- renderPlotly({
+    Top_10_graph
+  })
 }
