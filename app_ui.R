@@ -165,6 +165,7 @@ report_panel <- tabPanel(
 # This is where the ui is defined
 ui <- navbarPage(
   "Global Hunger And Malnourishment",
+  setBackgroundColor(color = c("#EEEEEE")),
   intro_panel,
   first_int_panel,
   second_int_panel,
