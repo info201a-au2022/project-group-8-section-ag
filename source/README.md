@@ -1,18 +1,12 @@
 # The `/source` Directory
 
-All of our project code is found in this directory.  We further organize our code into 
-these sub-directories (TODO: Update/Delete)
+All of our project code is found in this directory. See main directory for `app.R`, `app_server.R` and `app.ui.R`.
 
 |Source Directories | Brief Description|
 |---------------| -----------------|
-|[xxx](./xxx) | Description ... 
-|[xxx](./xxx) | Description ... 
+|[Summary Calculations](./summary_info.R) | Joining of Datasets and calculating summary information for the table.  
+|[Summary Table](./summary_table.R) | knitting summary table.
+|[Graph 1: Stunting](./Graph_1.R) | coding child stunting graph.
+|[Graph 2: Food Insecurity](./Graph_2.R) | coding food insecurity graph.
+|[Graph 3: Global Hunger Index](./Graph_3.R) | coding global hunger index graph showing GHI for top 10 countries with most stunting due to hunger.
 
-
-# DEVELOPER NOTE 1: About ... 
-* All source code for your projects should go in the `/source` directory
-* To organize your code, you might decide to create sub-directories
-* If you use sub-directories, plese briefly describe them in the table above
-* Please remember your audience (prospective employers, open source colleagues, TAs, Instructors). Therefore, 
-aim for clarity and conciseness.
-* When done, be sure to delete this NOTE sections (which are intended for you, of course, not your audience!)
