@@ -5,10 +5,10 @@ account: nstill77
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 7810014
-bundleId: 6594821
+bundleId: 6605689
 url: https://nstill77.shinyapps.io/project-group-8-section-ag/
-when: 1670262261.71526
-lastSyncTime: 1670262261.71527
+when: 1670432244.53488
+lastSyncTime: 1670432244.53491
 asMultiple: FALSE
 asStatic: FALSE
 ignoredFiles: .github/workflows/linter.yml|.github/workflows/stale.yml|instructions/project-design-brief.pdf
